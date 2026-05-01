@@ -7,6 +7,24 @@ type User struct {
 	Age  int
 }
 
+//Function
+func add(a int, b int) int {
+	return a + b
+}
+
+//Func with no return
+func greet(name string) {
+	fmt.Println("Hello", name)
+}
+
+//Multiple return values (VERY important in Go)
+func divide(c int, d int) (int, error) {
+	if d == 0 {
+		return 0, fmt.Errorf("Couldn't divide by zero")
+	}
+	return 0, nil
+}
+
 func main() {
 	fmt.Println("Start building. No excuses")
 
@@ -37,4 +55,15 @@ func main() {
 		fmt.Println(i)
 	}
 
+	//Function
+	result := add(3, 3)
+	fmt.Println(result)
+
+	//Multiple return values (VERY important in Go)
+	result, err := divide(10, 2)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(result)
+	}
 }
