@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+type User struct {
+	Name string
+	Age  int
+}
+
 func main() {
 	fmt.Println("Start building. No excuses")
 
@@ -15,5 +20,9 @@ func main() {
 	fmt.Printf("%T\n", name)
 	fmt.Printf("%T\n", age)
 	fmt.Printf("%T\n", isDev)
+
+	//Struct
+	user := User{Name: "Megha", Age: 24}
+	fmt.Println(user)
 
 }
