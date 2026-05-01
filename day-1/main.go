@@ -25,4 +25,10 @@ func main() {
 	user := User{Name: "Megha", Age: 24}
 	fmt.Println(user)
 
+	//If
+	if age > 18 {
+		fmt.Println("Adult")
+	} else {
+		fmt.Println("Minor")
+	}
 }
