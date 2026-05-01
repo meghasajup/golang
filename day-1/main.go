@@ -31,4 +31,10 @@ func main() {
 	} else {
 		fmt.Println("Minor")
 	}
+
+	//Loop
+	for i := 0; i <= 5; i++ {
+		fmt.Println(i)
+	}
+
 }
